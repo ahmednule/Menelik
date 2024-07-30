@@ -36,7 +36,7 @@ In our rapidly urbanizing world, cities face numerous challenges in maintaining 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/kili-change.git
+   git clone https://github.com/ahmednule/Manelik.git
 Navigate to the project directory:
 bash
 Copy code
