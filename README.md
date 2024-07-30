@@ -65,14 +65,12 @@ python manage.py runserver
 Contributing
 We welcome contributions to improve KiliChange. Please follow these steps:
 
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Commit your changes and push to your forked repository.
-Submit a pull request detailing your changes.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Fork the repository.
+### Create a new branch for your feature or bug fix.
+### Commit your changes and push to your forked repository.
+### Submit a pull request detailing your changes.
 
-Acknowledgements
+## Acknowledgments
 Kilimani Foundation for funding and supporting this initiative.
 Team Menelik for their hard work and dedication to solving urban challenges.
 
