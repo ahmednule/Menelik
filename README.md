@@ -40,37 +40,41 @@ In our rapidly urbanizing world, cities face numerous challenges in maintaining 
 Navigate to the project directory:
 bash
 Copy code
+```
 cd kili-change
+```
 Set up a virtual environment:
 bash
 Copy code
+```
 python -m venv env
-Activate the virtual environment:
+```
+#### Activate the virtual environment:
 On Windows:
-bash
-Copy code
+```
 .\env\Scripts\activate
-On macOS/Linux:
-bash
-Copy code
+```
+#### On macOS/Linux:
+```
 source env/bin/activate
+```
 Install the required dependencies:
-bash
-Copy code
+```
 pip install -r requirements.txt
+```
 Run the development server:
-bash
-Copy code
+```
 python manage.py runserver
+```
 Contributing
 We welcome contributions to improve KiliChange. Please follow these steps:
 
-### Fork the repository.
-### Create a new branch for your feature or bug fix.
-### Commit your changes and push to your forked repository.
-### Submit a pull request detailing your changes.
+1.  Fork the repository.
+ Create a new branch for your feature or bug fix.
+2. Commit your changes and push to your forked repository.
+3. Submit a pull request detailing your changes.
 
-## Acknowledgments
+### Acknowledgments
 Kilimani Foundation for funding and supporting this initiative.
 Team Menelik for their hard work and dedication to solving urban challenges.
 
