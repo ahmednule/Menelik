@@ -38,14 +38,10 @@ In our rapidly urbanizing world, cities face numerous challenges in maintaining 
    ```bash
    git clone https://github.com/ahmednule/Manelik.git
 Navigate to the project directory:
-bash
-Copy code
 ```
-cd kili-change
+cd killimani_Hackathon
 ```
 Set up a virtual environment:
-bash
-Copy code
 ```
 python -m venv env
 ```
