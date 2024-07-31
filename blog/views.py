@@ -5,7 +5,7 @@ posts =  [
     {
         'author': 'Hilary Gee',
         'title': 'Uncontrolled Tall Buildings',
-        'blog_content': 'This is a blog post about the tall builds',
+        'content': 'This is a blog post about the tall builds, which are not supposed to be around',
         'date_posted': 'August 27, 2021',
 
     }, 
