@@ -1,8 +1,6 @@
 from django.db import models
 from django.conf import settings
 
-# Create your models here.
-
 class User(models.Model):
     first_name = models.CharField(max_length=30, null=False)
     last_name = models.CharField(max_length=30, null=False)
@@ -21,3 +19,4 @@ class Posts(models.Model):
 
     def __str__(self):
         return f"{self.title} {self.created_at}"
+
