@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.forms import AuthenticationForm
+from .forms import SignUpForm
+
 
 
 schedule = [
@@ -51,3 +55,16 @@ def complain(request):
 
 def about(request):
     return render(request, 'home/about.html')
+
+def planningact(request):
+    return render(request, 'home/planningact.html' )
+
+def legalaction(request):
+    return render(request, 'home/legalaction.html' )
+
+def nappyrecycling(request):
+    return render(request, 'home/nappyrecycling.html' )
+
+
+def contact(request):
+    return render(request, 'home/contact.html' )
