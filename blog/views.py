@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 from django.shortcuts import render
 from .models import Posts
-=======
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
@@ -29,7 +27,6 @@ def login_view(request):
     else:
         form = AuthenticationForm()
     return render(request, 'registration/login.html', {'form': form})
->>>>>>> saisa
 
 posts = Posts.objects.all()
 
