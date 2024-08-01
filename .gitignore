@@ -67,6 +67,7 @@ celerybeat.pid
 
 # virtualenv
 venv/
+saisa/
 ENV/
 
 # Spyder project settings
