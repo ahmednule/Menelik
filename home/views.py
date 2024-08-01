@@ -30,3 +30,7 @@ def legalaction(request):
 
 def nappyrecycling(request):
     return render(request, 'home/nappyrecycling.html' )
+
+
+def contact(request):
+    return render(request, 'home/contact.html' )
