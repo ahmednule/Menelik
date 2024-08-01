@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
 from .forms import SignUpForm
+from .forms import TrashCollectionForm
 
 
 
@@ -42,8 +43,33 @@ def contact(request):
     return render(request, 'home/contact.html')
 
 def collection(request):
+    success_message = ''
+    if request.method == 'POST':
+        form = TrashCollectionForm(request.POST)
+        if form.is_valid():
+            first_name = form.cleaned_data['first_name']
+            last_name = form.cleaned_data['last_name']
+            email = form.cleaned_data['email']
+            phone = form.cleaned_data['phone']
+            print(f'{first_name} {last_name} \n {email} {phone}')
+
+            success_message = 'Your Request Was submitted Successfully'
+            
+            # Save or handle the form data as needed
+            # e.g. save to database or send a confirmation email
+            context = {
+                "week_schedule": schedule,
+                'form': form,
+                success_message: success_message
+            }
+            return render(request, 'home/collection.html', context)
+    else:
+        form = TrashCollectionForm()
+    
     context = {
-        "week_schedule": schedule
+        "week_schedule": schedule,
+        'form': form,
+        success_message: success_message
     }
     return render(request, 'home/collection.html', context)
 
