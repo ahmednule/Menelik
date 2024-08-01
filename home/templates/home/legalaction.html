@@ -16,35 +16,42 @@
   }
 
   .background-image-lawyers {
-    background-image: url('/static/images/lawyer1.jpg');
+    background-image: url('/static/images/lawyer1.jpeg');
   }
 
   .custom-background::before {
     content: '';
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.7); 
+    
     z-index: 0;
-    border-radius: 0.25rem;
+    border-radius: 1.25rem;
   }
 
   .custom-background > * {
-    position: relative;
+    
+    background-size: cover;
+    
+    
     z-index: 1;
+    
   }
 
   .custom-paragraph {
-    color: white;
+    color: rgb(10, 10, 10);
+    font: optional;
+    font-size: medium;
+    font-weight: bolder;
+    
   }
 </style>
 
 <div class="container text-center mt-5">
   <div class="p-5 custom-background background-image-legal">
-    <h1 class="display-4 font-weight-bold">Legal Action</h1>
-    <p class="custom-paragraph">
+    <h1 class="display-3 font-weight-bolder">Legal Action</h1>
+    <p class="custom-paragraph color=black">
       KiliChange empowers legal professionals to take action against non-compliant developers.<br>
       Our platform provides the tools and information necessary to ensure enforcement of urban planning laws.
     </p>
@@ -55,7 +62,7 @@
 </div>
 
 <div class="container text-center mt-5">
-  <div class="p-5 custom-background background-image-lawyers">
+  <div class="p-5 custom-background">
     <h1 class="display-4 font-weight-bold">Join Us as a Legal Advocate</h1>
     <p class="custom-paragraph">
       Are you a lawyer or a law graduate from Kilimani? Sign up to represent our community in the fight against unlawful development practices.<br>
@@ -64,6 +71,19 @@
     <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
     <a href="/signup-lawyer" class="btn btn-primary mr-2">Sign Up as a Lawyer</a>
     <a href="#" class="btn btn-secondary">Learn More</a>
+  </div>
+</div>
+
+<div class="container text-center mt-5">
+    <div class="p-5 custom-background background-image-lawyers">
+      <h1 class="display-4 font-weight-bold">AVAILABLE LAW FIRMS IN KILIMANI</h1>
+      <p class="custom-paragraph color=black">
+        KiliChange empowers legal professionals to take action against non-compliant developers.<br>
+        Our platform provides the tools and information necessary to ensure enforcement of urban planning laws.
+      </p>
+      <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
+      <a href="#" class="btn btn-secondary">Learn More</a>
+    </div>
   </div>
 </div>
 {% endblock %}

@@ -8,6 +8,7 @@ urlpatterns = [
      path('recycle/', views.recycle, name="recycle_page"),
      path('about/', views.about, name='about_page'),
      path('complain/', views.complain, name='complain_page'),
-     path('planningact/', views.planningact, name='planningact')
+     path('planningact/', views.planningact, name='planningact'),
+     path('legalaction/', views.legalaction, name='legalaction')
 
 ]
