@@ -21,3 +21,9 @@ def complain(request):
 
 def about(request):
     return render(request, 'home/about.html')
+
+def planningact(request):
+    return render(request, 'home/planningact.html' )
+
+def legalaction(request):
+    return render(request, 'home/legalaction.html' )
