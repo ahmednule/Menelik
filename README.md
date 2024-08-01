@@ -39,7 +39,7 @@ In our rapidly urbanizing world, cities face numerous challenges in maintaining 
    git clone https://github.com/ahmednule/Manelik.git
 Navigate to the project directory:
 ```
-cd killimani_Hackathon
+cd kilimani_Hackathon
 ```
 Set up a virtual environment:
 ```
@@ -56,7 +56,12 @@ source env/bin/activate
 ```
 Install the required dependencies:
 ```
-pip install -r requirements.txt
+pip install django
+```
+
+### On Windows
+```
+pip install python
 ```
 Run the development server:
 ```
