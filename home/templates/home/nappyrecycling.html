@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nappy Recycling</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #29742b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .custom-background {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px; 
+    overflow: hidden;
+    border-radius: 0.25rem; 
+    height: 600px;
+  }
+  .custom-background::before {
+    content: '';
+    position: absolute;
+    top: 10;
+    left: 20;
+    right: 0;
+    bottom: 0;
+    background: rgba(241, 162, 13, 0.7); /* White background with 0.7 opacity */
+    z-index: 0;
+    border-radius: 0.25rem; /* Match Bootstrap's rounded class */
+  }
+
+  .custom-background > * {
+    position: relative;
+    z-index: 1;
+  }
+  .background-image-1 {
+    background-image: url('/static/images/nappy1.jpg');
+
+  }
+  .background-image-2 {
+    background-image: url('/static/images/diaper1.jpg'); /* Update path if needed */
+  }
+        .step {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .step h2 {
+            color: #4CAF50;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nappy Recycling Process</h1>
+    </header>
+
+    <div class="container text-center mt-5">
+        <div class="p-5 custom-background background-image-2">
+          <h1 class="display-5 font-weight-bold">WELCOME TO KILICHANGE.</h1>
+          
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="step text-center">
+                    <h2>Step 1: Collection</h2>
+                    <p>Used nappies are collected from households and commercial establishments.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="step text-center">
+                    <h2>Step 2: Sorting and Cleaning</h2>
+                    <p>The collected nappies are sorted and cleaned to remove any contaminants.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="step text-center">
+                    <h2>Step 3: Recycling</h2>
+                    <p>The cleaned nappies are processed to extract recyclable materials, which are then used to manufacture new products.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-section text-center mt-5">
+            <h2>Recycling Process Image</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Nappy Recycling Process">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nappy Recycling Initiative. All rights reserved.</p>
+    </footer>
+</body>
+</html>

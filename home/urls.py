@@ -9,6 +9,7 @@ urlpatterns = [
      path('about/', views.about, name='about_page'),
      path('complain/', views.complain, name='complain_page'),
      path('planningact/', views.planningact, name='planningact'),
-     path('legalaction/', views.legalaction, name='legalaction')
+     path('legalaction/', views.legalaction, name='legalaction'),
+     path('nappyrecycling/', views.nappyrecycling, name='nappyrecycling')
 
 ]

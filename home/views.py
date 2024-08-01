@@ -27,3 +27,6 @@ def planningact(request):
 
 def legalaction(request):
     return render(request, 'home/legalaction.html' )
+
+def nappyrecycling(request):
+    return render(request, 'home/nappyrecycling.html' )
