@@ -17,42 +17,54 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:70px;">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="/">
-                <span class="h4" style="color: black;">Kili</span><span class="h4" style="color: orange;">Change</span>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/collection">Collection Residentials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/recycle">Public Recycling Stations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog">Launch a Complain</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <span class="h4" style="color: black;">KILI</span><span class="h4" style="color: orange;">CHANGE</span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/collection">Collection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/recycle">Recycling</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/planningact">Planning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/legalaction">Legal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/compliance">Compliance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog">Complaints</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/nappyrecycling">Nappy Recycling</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </nav>
+      </nav>
     <div class="container mt-4">
         <div class="row">
             {% for post in posts %}
@@ -63,7 +75,7 @@
                         <h6 class="card-subtitle mb-2 text-muted">By {{ post.author }} on {{ post.date_posted }}</h6>
 
                         <p class="card-text">{{ post.content | truncatechars:100 }}</p>
-                        <a href="/signup" class="card-link">Read More</a>
+                        <a href="signup/" class="card-link">Read More</a>
 
                     </div>
                 </div>

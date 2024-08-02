@@ -6,19 +6,23 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 80px; 
+    padding: 80px;
     overflow: hidden;
-    border-radius: 0.25rem; 
+    border-radius: 0.25rem;
     height: 600px;
+    color: #f8f9fa;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
   .custom-background::before {
     content: '';
     position: absolute;
-    top: 20;
-    left: 10;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 0.25rem;/
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    border-radius: 0.25rem;
   }
 
   .custom-background > * {
@@ -26,102 +30,75 @@
     z-index: 1;
   }
   .background-image-1 {
-    background-image: url('/static/images/kilimani1.jpg');
-
+    background-image: url('{% static 'images/kilimani1.jpg' %}');
   }
   .background-image-2 {
-    background-image: url('/static/images/kilimani2.jpg'); /* Update path if needed */
+    background-image: url('{% static 'images/kilimani2.jpg' %}');
   }
   .background-image-3 {
-    background-image: url('/static/images/kilimani3.jpeg');
+    background-image: url('{% static 'images/kilimani3.jpeg' %}');
   }
 
   .custom-container {
-    height: 400px;
-    background-color: rgb(11, 20, 20);
+    background-color: #0b1414;
+    padding: 40px;
+    border-radius: 0.25rem;
   }
 
   .custom-paragraph {
-    color: antiquewhite;
+    color: #f8f9fa;
+  }
+
+  .navbar-brand span {
+    font-weight: bold;
+  }
+
+  .navbar-brand span.orange {
+    color: orange;
   }
 </style>
-<div class="container-fluid">
-  ...<nav class="navbar navbar-expand-lg bg-light container fluid">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/collection">Collection</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/recycle">Recycling Stations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/planningact">Planning Act</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/legalaction">Legal Support</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/collection">Developer compliance</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/blog">Launch a Complain</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/nappyrecycling">Nappy recycling</a>
-          </li>
-        </ul>
-      </div>
+{% comment %} <div class="d-flex align-items-center justify-content-center vh-100">
+  <div class="container text-center">
+    <div class="p-5 custom-background shadow-sm">
+      <h1 class="display-4 font-weight-bold">REAL PEOPLE. REAL CONVERSATIONS. REAL ISSUES. REAL CHANGE.</h1>
+      <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
+      <a href="#" class="btn btn-primary mr-2">Get Involved</a>
+      <a href="#" class="btn btn-secondary">Learn More</a>
     </div>
-  </nav>
+  </div>
+</div> {% endcomment %}
+<div class="container text-center mt-5">
+  <div class="p-5 bg-light rounded shadow-sm">
+    <h1 class="display-4 font-weight-bold text-warning">REAL PEOPLE. REAL CONVERSATIONS. REAL ISSUES. REAL CHANGE.</h1>
+    <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
+  </div>
 </div>
 
-<!-- <div class="container text-center mt-5 custom-container">
-    <h1 class="display-5 font-weight-bold">REAL PEOPLE. REAL CONVERSATIONS. REAL ISSUES. REAL CHANGE.</h1>
-    <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
-    <a href="#" class="btn btn-primary mr-2">Get Involved</a>
-    <a href="#" class="btn btn-secondary">Learn More</a>
-  </div>
-</div> -->
-<div class="container text-center mt-5">
-  <div class="p-5 custom-background background-image-1 custom-paragraph shadow-sm">
-    <h1 class="display-4 font-weight-bold">REAL PEOPLE. REAL CONVERSATIONS. REAL ISSUES. REAL CHANGE.</h1>
-    <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
-    <a href="#" class="btn btn-primary mr-2">Get Involved</a>
-    <a href="#" class="btn btn-secondary">Learn More</a>
-  </div>
-
-<div class="container text-center mt-5">
-  <div class="p-5 custom-background background-image-2">
+<div class="container-fluid text-center mt-5">
+  <div class="p-5 bg-light shadow-sm rounded">
     <h1 class="display-5 font-weight-bold">WELCOME TO KILICHANGE.</h1>
-    <P class="display-6 font-weight-bold color=white">KiliChange is a platform for creating awareness: Educates Kilimani residents about the Physical Planning Act.
-      Monitoring: A platform for residents to report violations.
-      Enforcement: Enable legal professionals and authorities to act against non-compliant developers.
-      </P>
-    <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
-    <a href="#" class="btn btn-primary mr-2">Get Involved</a>
-    <a href="#" class="btn btn-secondary">Learn More</a>
+    <p class="lead text-muted">KiliChange is a platform for creating awareness, educating Kilimani residents about the Physical Planning Act.</p>
+    <p class="lead text-muted">Monitoring: A platform for residents to report violations.</p>
+    <p class="lead text-muted">Enforcement: Enable legal professionals and authorities to act against non-compliant developers.</p>
+    <a href="#" class="btn btn-primary btn-lg mr-2">Get Involved</a>
+    <a href="#" class="btn btn-secondary btn-lg">Learn More</a>
   </div>
 </div>
 
-<div class="container text-center mt-5">
-  <div class="p-5 custom-background background-image-1 shadow-sm">
+
+{% comment %} <div class="container text-center mt-5">
+  <div class="p-5 custom-background background-image-3 shadow-sm">
     <h1 class="display-4 font-weight-bold">REAL PEOPLE. REAL CONVERSATIONS. REAL ISSUES. REAL CHANGE.</h1>
     <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
     <a href="#" class="btn btn-primary mr-2">Get Involved</a>
     <a href="#" class="btn btn-secondary">Learn More</a>
   </div>
-</div>
+</div> {% endcomment %}
 
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-4 mb-4">
-      <div class="card">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5 class="card-title">Efficient Waste Collection</h5>
           <p class="card-text">Discover optimized waste collection schedules and routes to ensure timely and efficient waste management for residential areas.</p>
@@ -130,7 +107,7 @@
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5 class="card-title">Locate Recycling Stations</h5>
           <p class="card-text">Find the nearest public recycling stations and contribute to a cleaner, greener community by recycling your waste.</p>
@@ -139,7 +116,7 @@
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5 class="card-title">Report Issues</h5>
           <p class="card-text">Have a complaint about waste collection or recycling services? Let us know and we'll address it promptly.</p>
@@ -148,7 +125,7 @@
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5 class="card-title">About Our Initiative</h5>
           <p class="card-text">Learn more about the Kilichange initiative, our mission, and how we are working towards sustainable urban development.</p>
@@ -157,7 +134,7 @@
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5 class="card-title">Get in Touch</h5>
           <p class="card-text">Have any questions or suggestions? Reach out to us and we’ll get back to you as soon as possible.</p>
@@ -166,7 +143,7 @@
       </div>
     </div>
     <div class="col-md-4 mb-4">
-      <div class="card">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5 class="card-title">Welcome to Kilichange</h5>
           <p class="card-text">Explore our platform and discover the various features and services we offer to help build a sustainable future.</p>
