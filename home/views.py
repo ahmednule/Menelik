@@ -94,3 +94,6 @@ def nappyrecycling(request):
 
 def contact(request):
     return render(request, 'home/contact.html' )
+
+def  developer_compliance(request):
+    return render(request, 'home/developer_compliance.html')
