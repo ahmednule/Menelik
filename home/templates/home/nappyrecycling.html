@@ -1,60 +1,144 @@
-{% extends "home/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nappy Recycling</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #29742b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .custom-background {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 100px; 
+            overflow: hidden;
+            border-radius: 0.25rem; 
+            height: 600px;
+        }
+        .custom-background::before {
+            content: '';
+            position: absolute;
+            top: 10;
+            left: 20;
+            right: 0;
+            bottom: 0;
+            background: rgba(241, 162, 13, 0.7); 
+            z-index: 0;
+            border-radius: 0.25rem;
+        }
+        .custom-background > * {
+            position: relative;
+            z-index: 1;
+        }
+        .background-image-1 {
+            background-image: url('/static/images/nappy1.jpg');
+        }
+        .background-image-2 {
+            background-image: url('/static/images/diaper1.png'); 
+        }
+        .step {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .step h2 {
+            color: #4CAF50;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nappy Recycling Process</h1>
+    </header>
 
-{% block content %}
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-12 mb-4">
-      <img src="{% static 'home/images/nappy-recycling.jpg' %}" class="img-fluid rounded" alt="Nappy Recycling">
+    <div class="container text-center mt-5">
+        <div class="p-5 custom-background background-image-2">
+            <h1 class="display-5 font-weight-bold">.</h1>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <h2 class="mb-3">Nappy Recycling Process</h2>
-      <p>
-        Recycling nappies is a simple yet effective way to reduce waste and contribute to a cleaner environment. Our process includes collection, sorting, and recycling of used nappies into reusable materials.
-      </p>
-      <p>
-        Is Burning Diapers the Best Solution for Kenya? Certainly Not
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="mb-3">Nappy Recycling Process</h2>
+            <p>
+                Recycling nappies is a simple yet effective way to reduce waste and contribute to a cleaner environment.
+                Our process includes collection, sorting, and recycling of used nappies into reusable materials.
+            </p>
+            <p>
+                Is Burning Diapers the Best Solution for Kenya? Certainly Not
+                In Kenya, millions of disposable diapers end up in residual waste bins every day, destined for incineration. </br>
+                While this is the common method, it is far from ideal. When it comes to disposable diapers, incineration is not sustainable. Although burning generates energy, it also means losing all the materials forever.
+                Diapers are complex products made from various plastics. Burning these plastics is problematic for two main reasons. Firstly, it destroys a valuable raw material that could be recycled. Secondly, incinerating plastics is detrimental to both the climate and the environment.
+                a cutting-edge and sustainable recycling plant specifically designed for diapers.
+            </p>
+        </div>
+    </div>
 
-In Kenya, millions of disposable diapers end up in residual waste bins every day, destined for incineration. While this is the common method, it is far from ideal. When it comes to disposable diapers, incineration is not sustainable. Although burning generates energy, it also means losing all the materials forever.
-
-Diapers are complex products made from various plastics. Burning these plastics is problematic for two main reasons. Firstly, it destroys a valuable raw material that could be recycled. Secondly, incinerating plastics is detrimental to both the climate and the environment.
-
-a cutting-edge and sustainable recycling plant specifically designed for diapers.
-      </p>
-    </div>
-    <div class="col-md-6">
-      <h2 class="mb-3">Step-by-Step Process</h2>
-      <p>
-        1. Collection: Nappies are collected from designated bins.<br>
-        2. Sorting: Collected nappies are sorted based on material composition.<br>
-        3. Recycling: Sorted nappies are processed into reusable materials.
-      </p>
-      <p>
-        The nappy recycling process
-When it comes to nappy recycling, the magic word is thermal pressure hydrolysis. This is a process that melts down the nappies at a temperature of 250°C and at a pressure of 40 bar rather than incinerate them. As a result, the individual components of the nappies – primarily polymers and cellulose – can be separated from each other and recovered. The whole system generates high quality recycled raw materials – in the form of plastic granules and paper – which can be returned to production cycles and reused. But that’s not all. The leftover material is then enriched with digested sewage sludge in a downstream process. This produces high-purity biogas that can be transformed into green electricity.
-      </p>
-    </div>
-  </div>
-  <div class="row mt-5">
-    <div class="col-12 mb-4">
-      <img src="{% static 'home/images/process.jpg' %}" class="img-fluid rounded" alt="Recycling Process">
-    </div>
-  </div>
-  <div class="row mt-5">
-    <div class="col-12">
-      <h2 class="mb-3">Benefits of Nappy Recycling</h2>
-      <p>
-        Recycling nappies not only helps in reducing the amount of waste that ends up in landfills but also conserves resources and reduces pollution. Here are some key benefits:
-      </p>
-      <ul>
-        <li>Reduces landfill waste</li>
-        <li>Conserves natural resources</li>
-        <li>Reduces greenhouse gas emissions</li>
-        <li>Promotes a cleaner and healthier environment</li>
-      </ul>
-    </div>
-  </div>
-</div>
-{% endblock %}
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="step text-center">
+                    <h2>Step 1: Collection</h2>
+                    <p>Used nappies are collected from households and commercial establishments.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="step text-center">
+                    <h2>Step 2: Sorting and Cleaning</h2>
+                    <p>The collected nappies are sorted and cleaned to remove any contaminants.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="step text-center">
+                    <h2>Step 3: Recycling</h2>
+                    <p>The cleaned nappies are processed to extract recyclable materials, which are then used to manufacture new products.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-section text-center mt-5">
+            <h2>Recycling Process Image</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Nappy Recycling Process">
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="mb-3">Benefits of Nappy Recycling</h2>
+                <p>
+                    Recycling nappies not only helps in reducing the amount of waste that ends up in landfills but also conserves resources and reduces pollution. Here are some key benefits:
+                </p>
+                <ul>
+                    <li>Reduces landfill waste</li>
+                    <li>Conserves natural resources</li>
+                    <li>Reduces greenhouse gas emissions</li>
+                    <li>Promotes a cleaner and healthier environment</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nappy Recycling Initiative. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 
