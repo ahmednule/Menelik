@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nappy Recycling</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+{% extends 'home/base.html'%}
     <style>
         body {
             background-color: #f4f4f4;
@@ -27,8 +21,8 @@
         .custom-background::before {
             content: '';
             position: absolute;
-            top: 10;
-            left: 20;
+            top: 0;
+            left: 0;
             right: 0;
             bottom: 0;
             background: rgba(241, 162, 13, 0.7); 
@@ -50,6 +44,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
         .step h2 {
             color: #4CAF50;
@@ -75,24 +70,29 @@
 
     <div class="container text-center mt-5">
         <div class="p-5 custom-background background-image-2">
-            <h1 class="display-5 font-weight-bold">.</h1>
-            <a href="#" class="btn btn-secondary">Learn More</a>
+            <h1 class="display-5 font-weight-bold">Recycling for a Better Future</h1>
+            <a href="#" class="btn btn-secondary mt-3">Learn More</a>
         </div>
     </div>
-    <div class="row container">
-        <div class="col-md-6">
-            <h2 class="mb-3">Nappy Recycling Process</h2>
-            <p>
-                Recycling nappies is a simple yet effective way to reduce waste and contribute to a cleaner environment.
-                Our process includes collection, sorting, and recycling of used nappies into reusable materials.
-            </p>
-            <p>
-                Is Burning Diapers the Best Solution for Kenya? Certainly Not
-                In Kenya, millions of disposable diapers end up in residual waste bins every day, destined for incineration. </br>
-                While this is the common method, it is far from ideal. When it comes to disposable diapers, incineration is not sustainable. Although burning generates energy, it also means losing all the materials forever.
-                Diapers are complex products made from various plastics. Burning these plastics is problematic for two main reasons. Firstly, it destroys a valuable raw material that could be recycled. Secondly, incinerating plastics is detrimental to both the climate and the environment.
-                a cutting-edge and sustainable recycling plant specifically designed for diapers.
-            </p>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-3">Nappy Recycling Process</h2>
+                <p>
+                    Recycling nappies is a simple yet effective way to reduce waste and contribute to a cleaner environment.
+                    Our process includes collection, sorting, and recycling of used nappies into reusable materials.
+                </p>
+                <p>
+                    Is Burning Diapers the Best Solution for Kenya? Certainly Not. 
+                    In Kenya, millions of disposable diapers end up in residual waste bins every day, destined for incineration. 
+                    While this is the common method, it is far from ideal. Incineration is not sustainable. Although burning generates energy, it also means losing all the materials forever.
+                    Diapers are complex products made from various plastics. Burning these plastics is problematic for two main reasons: it destroys a valuable raw material that could be recycled, and incinerating plastics is detrimental to both the climate and the environment.
+                </p>
+                <p>
+                    Our solution: a cutting-edge and sustainable recycling plant specifically designed for diapers.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -141,4 +141,3 @@
     </footer>
 </body>
 </html>
-
