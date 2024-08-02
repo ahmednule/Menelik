@@ -10,6 +10,7 @@ urlpatterns = [
      path('complain/', views.complain, name='complain_page'),
      path('planningact/', views.planningact, name='planningact'),
      path('legalaction/', views.legalaction, name='legalaction'),
-     path('nappyrecycling/', views.nappyrecycling, name='nappyrecycling')
+     path('nappyrecycling/', views.nappyrecycling, name='nappyrecycling'),
+     path('architects/', views.architects, name='architects'),
 
 ]

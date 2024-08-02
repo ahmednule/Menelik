@@ -34,3 +34,6 @@ def nappyrecycling(request):
 
 def contact(request):
     return render(request, 'home/contact.html' )
+
+def architects(request):
+    return render(request, 'home/architects.html')
