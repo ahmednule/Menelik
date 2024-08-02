@@ -5,14 +5,15 @@
   .custom-background {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw; /* Ensures full viewport width */
+    margin-left: calc(-100vw / 2 + 50%); /* Adjusts for left offset */
+    margin-right: calc(-100vw / 2 + 50%); /* Adjusts for right offset */
     position: relative;
-    padding: 80px;
-    overflow: hidden;
-    border-radius: 0.25rem;
-    height: 600px;
-    color: #f8f9fa;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
+  
+
   .custom-background::before {
     content: '';
     position: absolute;
@@ -20,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
     z-index: 0;
     border-radius: 0.25rem;
   }
@@ -29,12 +30,15 @@
     position: relative;
     z-index: 1;
   }
+
   .background-image-1 {
     background-image: url('{% static 'images/kilimani1.jpg' %}');
   }
+
   .background-image-2 {
     background-image: url('{% static 'images/kilimani2.jpg' %}');
   }
+
   .background-image-3 {
     background-image: url('{% static 'images/kilimani3.jpeg' %}');
   }
@@ -56,49 +60,55 @@
   .navbar-brand span.orange {
     color: orange;
   }
+
+  .custom-background .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 </style>
-<div class="container-fluid">
 
-</div>
+<div class="container-fluid"></div>
 
-<!-- <div class="container text-center mt-5 custom-container">
-    <h1 class="display-5 font-weight-bold">REAL PEOPLE. REAL CONVERSATIONS. REAL ISSUES. REAL CHANGE.</h1>
-    <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
-    <a href="#" class="btn btn-primary mr-2">Get Involved</a>
-    <a href="#" class="btn btn-secondary">Learn More</a>
-  </div>
-</div> -->
 <div class="container text-center mt-5">
   <div class="p-5 bg-light rounded shadow-sm">
     <h1 class="display-4 font-weight-bold text-warning">REAL PEOPLE. REAL CONVERSATIONS. REAL ISSUES. REAL CHANGE.</h1>
     <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
   </div>
 </div>
-
-{% comment %} <div class="container text-center mt-5">
+<div class="container-fluid p-0 mt-5">
   <div class="p-5 custom-background background-image-2">
-    <h1 class="display-5 font-weight-bold">WELCOME TO KILICHANGE.</h1>
-    <P class="display-6 font-weight-bold color=white">KiliChange is a platform for creating awareness: Educates Kilimani residents about the Physical Planning Act.
-      Monitoring: A platform for residents to report violations.
-      Enforcement: Enable legal professionals and authorities to act against non-compliant developers.
-      </P>
-    <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
-    <a href="#" class="btn btn-primary mr-2">Get Involved</a>
-    <a href="#" class="btn btn-secondary">Learn More</a>
+    <div class="text-center">
+      <div>
+        <h1 class="display-5 font-weight-bold text-warning">WELCOME TO KILICHANGE.</h1>
+        <p class="display-6 font-weight-bold fs-5 text-white">
+          KiliChange is a platform for creating awareness: Educates Kilimani residents about the Physical Planning Act.
+          Monitoring: A platform for residents to report violations.
+          Enforcement: Enable legal professionals and authorities to act against non-compliant developers.
+        </p>
+        <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
+        <a href="#" class="btn btn-primary mr-2">Get Involved</a>
+        <a href="#" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
   </div>
-</div> {% endcomment %}
+</div>
+
+
 
 <div class="container text-center mt-5">
   <div class="p-5 custom-background background-image-1 shadow-sm">
-    <h1 class="display-4 font-weight-bold">We are the change we need, No one is coming to save us</h1>
-    <p>Mobilizing the residents of Kilimani. Everyone takes part in the change, lawyers, srchitects, advocates.
-      Let's take charge of our community and work together to build a sustainable future for all.</br>
-    OUR VOICE IS OUR POWER</p>
+    <h1 class="display-4 font-weight-bold text-warning ">We are the change we need, No one is coming to save us</h1>
+    <p class="text-white fs-5">Mobilizing the residents of Kilimani. Everyone takes part in the change, lawyers, architects, advocates.
+      Let's take charge of our community and work together to build a sustainable future for all.<br>
+      OUR VOICE IS OUR POWER
+    </p>
     <p class="lead text-muted">Sponsored by the Kilimani Foundation</p>
     <a href="#" class="btn btn-primary mr-2">Get Involved</a>
     <a href="#" class="btn btn-secondary">Learn More</a>
   </div>
-</div> 
+</div>
 
 <div class="container mt-5">
   <div class="row">
