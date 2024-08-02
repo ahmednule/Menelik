@@ -95,5 +95,10 @@ def nappyrecycling(request):
 def contact(request):
     return render(request, 'home/contact.html' )
 
+<<<<<<< HEAD
 def  developer_compliance(request):
     return render(request, 'home/developer_compliance.html')
+=======
+def architects(request):
+    return render(request, 'home/architects.html')
+>>>>>>> origin/saisa

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architects in Kilimani</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #132638;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .section-header {
+            color: #29742b;
+            margin-bottom: 30px;
+        }
+        .custom-background {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 100px; 
+            overflow: hidden;
+            border-radius: 0.25rem; 
+            height: 600px;
+        }
+        .custom-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+             
+            z-index: 0;
+            border-radius: 0.25rem;
+        }
+        .custom-background > * {
+            color:antiquewhite;
+            position: relative;
+            z-index: 1;
+        }
+        .background-image-architects {
+            background-image: url('/static/images/architect2.jpg');
+        }
+        .card-custom {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Architects in Kilimani</h1>
+    </header>
+
+    <div class="container text-center mt-5">
+        <div class="p-5 custom-background background-image-architects">
+            <h1 class="display-5 font-weight-bold">.</h1>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+
+   <main>
+    <div class="container text-center mt-5">
+        <div class="p-5 custom-background background-image-legal">
+          <h1 class="display-3 font-weight-bolder">Architects are Solution Finders</h1>
+          <p class="custom-paragraph color=black">
+            Join our platform for architects in Kilimani, where innovative minds unite to design sustainable solutions and curb urban damage. </br>
+            Collaborate, share insights, and lead the way in transforming our community with better planning and thoughtful development. </br>Together, let's shape a brighter future for Kilimani.
+          </p>
+          <a href="/blog" class="btn btn-primary mr-2">Get Involved</a>
+        </div>
+      </div>
+      <div class="container text-center mt-5 custom-background">
+        <div>
+          <h1 class=" display-6 font-weight-bold">Join the Community</h1>
+          <p class="custom-paragraph">
+            Are you an architect, urban planner or an architect graduate from Kilimani? Sign up to represent our community in the fight against unlawful development practices.<br>
+            Together, we can ensure a sustainable future for Kilimani.
+          </p>
+          <p>Sign up to be part of the Kilimani Architects community and contribute to sustainable urban design solutions.</p>
+          <a href="/signup-lawyer" class="btn btn-primary mr-2">Sign Up an architect</a>
+          <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+       
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h2 class="card-title">Discussion Forum</h2>
+                        <p class="card-text">Engage in discussions with fellow architects to share ideas, best practices, and solutions for urban design challenges in Kilimani.</p>
+                        <a href="#" class="btn btn-outline-primary">Join the Forum</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h2 class="card-title">Resources</h2>
+                        <p class="card-text">Access a collection of resources including guidelines, case studies, and tools to aid in your architectural projects.</p>
+                        <a href="#" class="btn btn-outline-primary">View Resources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-section text-center mt-5">
+            <h2>Design Solutions Image</h2>
+            <img src="https://www.google.com/search?sca_esv=9267af3241730e66&sca_upv=1&rlz=1C1BNSD_enKE1017KE1018&sxsrf=ADLYWILTzEa2hJrBPVTZAeCoNvXbs7toTQ:1722582665347&q=architects&udm=2&fbs=AEQNm0D5pWR3hwQcxv0OafZXyy9Ug4qcQN3UkuMYJULDelDXACCZZFjoIwhz1xtPdmgBKz3Ac-Cdf3Cz_dOsb0wPCtAwKlhXALUf1vaWfu9XeHJ2V_8GAs7UfxrgOFhOBMOcKNqIUy0EHmciRVev1CgyxNJwk847V76bVXruxC0exHdrSHDi0SuGKQFF6vhNAU-vcS-5HWe7&sa=X&sqi=2&ved=2ahUKEwiv1fS-4NWHAxVQQPEDHahWD0IQtKgLegQIERAB&biw=650&bih=659&dpr=1#vhid=3BSbmduRKAm1FM&vssid=mosaic" alt="Architectural Design Solutions" class="img-fluid">
+        </div>
+    </main>
+    <footer>
+        <p class="text-center text-muted mt-5 mb-3">&copy; 2024 Kilimani Architects Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
