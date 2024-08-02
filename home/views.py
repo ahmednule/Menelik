@@ -73,9 +73,6 @@ def collection(request):
     }
     return render(request, 'home/collection.html', context)
 
-def recycle(request):
-    return render(request, 'home/recycle.html')
-
 def complain(request):
     return render(request, 'home/complain.html')
 

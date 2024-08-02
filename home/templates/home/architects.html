@@ -1,11 +1,6 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architects in Kilimani</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+{% extends 'home/base.html' %}
+{% block content %}
     <style>
         body {
             background-color: #132638;
@@ -36,7 +31,6 @@
             left: 0;
             right: 0;
             bottom: 0;
-             
             z-index: 0;
             border-radius: 0.25rem;
         }
@@ -55,7 +49,7 @@
         }
     </style>
 </head>
-<body>
+<div class='mt-4'>
     <header>
         <h1>Architects in Kilimani</h1>
     </header>
@@ -78,7 +72,7 @@
           <a href="/blog" class="btn btn-primary mr-2">Get Involved</a>
         </div>
       </div>
-      <div class="container text-center mt-5 custom-background">
+      <div class="container text-center mt5 custom-background">
         <div>
           <h1 class=" display-6 font-weight-bold">Join the Community</h1>
           <p class="custom-paragraph">
@@ -116,12 +110,6 @@
             <img src="https://www.google.com/search?sca_esv=9267af3241730e66&sca_upv=1&rlz=1C1BNSD_enKE1017KE1018&sxsrf=ADLYWILTzEa2hJrBPVTZAeCoNvXbs7toTQ:1722582665347&q=architects&udm=2&fbs=AEQNm0D5pWR3hwQcxv0OafZXyy9Ug4qcQN3UkuMYJULDelDXACCZZFjoIwhz1xtPdmgBKz3Ac-Cdf3Cz_dOsb0wPCtAwKlhXALUf1vaWfu9XeHJ2V_8GAs7UfxrgOFhOBMOcKNqIUy0EHmciRVev1CgyxNJwk847V76bVXruxC0exHdrSHDi0SuGKQFF6vhNAU-vcS-5HWe7&sa=X&sqi=2&ved=2ahUKEwiv1fS-4NWHAxVQQPEDHahWD0IQtKgLegQIERAB&biw=650&bih=659&dpr=1#vhid=3BSbmduRKAm1FM&vssid=mosaic" alt="Architectural Design Solutions" class="img-fluid">
         </div>
     </main>
-    <footer>
-        <p class="text-center text-muted mt-5 mb-3">&copy; 2024 Kilimani Architects Initiative. All rights reserved.</p>
-    </footer>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+{% endblock %}
