@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-ksrtw7uz73_+fd#f17c8$vm(t^%e(iu+t#)1vuxd88kfdw+)+q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['menelik.onrender.com','localhost','127.0.0.1']
+CRSF_TRUSTED_ORIGINS = ['https://menelik.onrender.com']
 
 
 # Application definition
